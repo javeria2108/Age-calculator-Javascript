@@ -1,0 +1,149 @@
+body{
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+   
+}
+.container{
+   
+    padding:30px;
+    width:70vh;
+    height: 60vh;
+    min-height:100px;
+    margin: 100px auto;
+    background-color:white;
+    border-radius: 15px;
+    border-bottom-right-radius: 120px;
+}
+.input{
+    display: flex;
+}
+.input:hover {
+    cursor: pointer;
+  }
+@font-face {
+    font-family: Poppins;
+    src: url("./assets/fonts/Poppins-Bold.ttf");
+  }
+.title{
+    font-family:Poppins;
+    text-align: left;
+    font-size: 10px;
+    word-spacing: 60px;
+    line-height: 0.5;
+    letter-spacing: 2px;
+    color: rgb(139, 139, 139);
+
+}
+.box{
+    word-spacing: 60px;
+    color:rgb(139, 139, 139);
+    width: 15vw;
+}
+input[type=number]{
+    width: 73px;
+    font-family:Poppins;
+    text-align: left;
+    font-size: 18px;
+    color:black;
+    margin: 2px;
+    padding-left: 9px;
+    border: 2px solid #f8f8f8ea;
+    border-radius: 5px;
+    height:40px ;
+}
+.input-btn{
+    background-color: rgb(129, 76, 254);
+    border-radius: 100%;
+    width:25px;
+    height: auto;
+    padding: 1rem;
+    position:absolute;
+    bottom: 23.5rem;
+    right: 8rem;
+}
+.input-btn:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 8%);
+}
+hr {
+    box-shadow: 0 0 5px hsl(0, 0%, 86%);
+    opacity: 0.3;
+    width: 85%;
+    margin: 6px;
+  }
+.image{
+   display: grid;
+   grid-template-columns: 80% 20%;
+
+}
+.output{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 37rem) {
+    html {
+      font-size: 60.5%;
+    }
+    .container {
+      width: 35rem;
+      margin: 0 2.4rem;
+    }
+  
+    svg{
+      bottom: -4rem;
+      right: 45%;
+    }
+  
+  }
+  .input-error{
+    font-size: 0.6rem;
+    color: hsl(0, 100%, 67%);
+    font-weight: 400;
+    font-style: italic;
+    position: absolute;
+    opacity: 0;
+  }
+  @media (max-width: 380px) {
+    .input-error{
+      max-width: 90px;
+    }
+  }
+  .error .title {
+    color: hsl(0, 100%, 67%);
+  }
+  .error .input {
+    border: 1px solid hsl(0, 100%, 67%);
+  }
+  .error .input:focus {
+    border: 1px solid hsl(0, 100%, 67%);
+  }
+  .error .input-error {
+    opacity: 1;
+  }
+  .output {
+    margin-top: 35px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 3rem;
+    font-style: italic;
+  }
+  @media (max-width: 520px) {
+    .output {
+      font-size: 3rem;
+    }
+  }
+  @media (max-width: 380px) {
+    .output {
+      font-size: 2.7rem;
+    }
+  }
+  .output__text span {
+    color: hsl(259, 100%, 65%);
+    margin-right: 8px;
+  }
+ 
